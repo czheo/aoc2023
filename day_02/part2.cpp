@@ -12,8 +12,7 @@ int main()
       int n;
       char color[10];
       char sep;
-      scanf("%d %[a-z]", &n, color);
-      scanf("%c", &sep);
+      scanf("%d %[a-z]%c", &n, color, &sep);
       if (strcmp(color, "red") == 0) {
         red = max(red, n);
       } else if (strcmp(color, "green") == 0) {
